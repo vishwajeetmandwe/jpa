@@ -18,7 +18,7 @@ public class CategoryContrller {
 	@PostMapping(value = "/savecategory")
 	public String saveCategoty(@RequestBody Category category) {
 		categoryRepo.save(category);
-		
+		System.out.println();
 		return "category inserted";
 	}
 	
